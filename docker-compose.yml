@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ml_api:
+    build: ml
+    ports:
+      - 8000:8000
+  frontend:
+    build: frontend
+    ports:
+      - 3000:80
